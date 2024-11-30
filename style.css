@@ -1,0 +1,81 @@
+/* Add background image */
+body {
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 99vh;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(241, 238, 238, 0);
+    /* semi-transparent background */
+    padding: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#commandStatus {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#responseArea {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #f0eaea;
+}
+
+/* Styling for the microphone button */
+.mic-btn {
+    font-size: 50px;
+    padding: 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    /* Animation to make the mic "pulse" */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animation for the mic icon (pulsing effect) */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Change color when hovering over the microphone button */
+.mic-btn:hover {
+    transform: scale(1.2);
+    /* Slightly enlarge the mic on hover */
+    animation: none;
+    /* Stop pulse animation on hover */
+}

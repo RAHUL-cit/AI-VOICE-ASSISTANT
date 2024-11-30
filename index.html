@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Command Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+</head>
+
+<body style="background-image: url('{{ url_for('static', filename='background.jpg') }}');">
+    <div class="container">
+        <h1>Voice Command Interface</h1>
+        <button id="micBtn" onclick="startRecognition()" class="mic-btn">
+            <i class="fas fa-microphone"></i> <!-- Microphone icon -->
+        </button>
+        <p id="commandStatus">Awaiting command...</p>
+        <p id="responseArea"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
